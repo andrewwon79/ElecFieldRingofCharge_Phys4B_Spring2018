@@ -11,10 +11,6 @@ using namespace std;
 class Input{
     private:
         int camount=2;
-//        double *chargex;
-//        double *chargey;
-//        double *chargez;
-//        double *chargem;
         double ptx;
         double pty;
         double ptz;

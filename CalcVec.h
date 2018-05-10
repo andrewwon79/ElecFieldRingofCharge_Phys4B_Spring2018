@@ -9,10 +9,7 @@
 using namespace std;
 class CalcVec{
     private:
-        double constk=8987552000;
-//        double *chargefx;
-//        double *chargefy;
-//        double *chargefz;
+        double k=8987552000;
         double magnit = 0;
         double dx = 0;
         double dy = 0;

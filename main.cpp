@@ -23,7 +23,6 @@ using namespace std;
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare Variables
-    double constk=8987552000;
     int camount=2;
     Input ChrgInf;
     CalcVec info(camount);
