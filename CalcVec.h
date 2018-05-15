@@ -15,10 +15,13 @@ class CalcVec{
         double dy = 0;
         double dz = 0;
         double dm = 0;
-    public:
         double *fx;
         double *fy;
         double *fz;
+    public:
+        double* retfx();
+        double* retfy();
+        double* retfz();
         void Compute(int,double,double[],double,double[],double,double[],double[]);
         CalcVec(int);
         Destroy();

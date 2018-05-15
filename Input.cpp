@@ -27,10 +27,10 @@ void Input::chrgInp()
         cin>>y[count];
         cout<<"Enter the z coordinate of charge "<<count+1<<endl;
         cin>>z[count];
-        cout<<"Enter the magnitude of charge "<<count+1<<endl;
+        cout<<"Enter the magnitude of charge "<<count+1<<" in N/C"<<endl;
         cin>>m[count];
     }
-}
+    }
 
 void Input::EInput()
 {
@@ -63,4 +63,24 @@ Input::Destroy()
     delete []y;
     delete []z;
     delete []m;
+}
+
+double* Input::retx()
+{
+    return x;
+}
+
+double* Input::rety()
+{
+    return y;
+}
+
+double* Input::retz()
+{
+    return z;
+}
+
+double* Input::retm()
+{
+    return m;
 }

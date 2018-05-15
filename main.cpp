@@ -26,12 +26,12 @@ int main(int argc, char** argv) {
     int camount=2;
     Input ChrgInf;
     CalcVec info(camount);
-    //Process/Map inputs to outputs
     Output writeto;
+    //Process/Map inputs to outputs
     ChrgInf.chrgInp();
     ChrgInf.EInput();
-    info.Compute(ChrgInf.retAmnt(),ChrgInf.retptx(),ChrgInf.x,ChrgInf.retpty(),ChrgInf.y,ChrgInf.retptz(),ChrgInf.z,ChrgInf.m);
-    writeto.sum(info.fx,info.fy,info.fz,ChrgInf.retAmnt());
+    info.Compute(ChrgInf.retAmnt(),ChrgInf.retptx(),ChrgInf.retx(),ChrgInf.retpty(),ChrgInf.rety(),ChrgInf.retptz(),ChrgInf.retz(),ChrgInf.retm());
+    writeto.sum(info.retfx(),info.retfy(),info.retfz(),ChrgInf.retAmnt());
     //Output data
     writeto.results();
     //Clean up Dynamic Arrays

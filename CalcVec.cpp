@@ -41,3 +41,18 @@ CalcVec::Destroy()
     delete []fy;
     delete []fz;
 }
+
+double* CalcVec::retfx()
+{
+    return fx;
+}
+
+double* CalcVec::retfy()
+{
+    return fy;
+}
+
+double* CalcVec::retfz()
+{
+    return fz;
+}

@@ -14,11 +14,15 @@ class Input{
         double ptx;
         double pty;
         double ptz;
-    public:
         double *x;
         double *y;
         double *z;
         double *m;
+    public:
+        double* retx();
+        double* rety();
+        double* retz();
+        double* retm();
         int retAmnt();
         Input();
         void chrgInp();
